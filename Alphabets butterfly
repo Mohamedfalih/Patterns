@@ -1,0 +1,63 @@
+        ABCD BUTTERFLY PATTERN
+
+SOURCE CODE:
+#include<iostream>
+using namespace std;
+int main()
+{   int A=97;
+    int n;
+    cin>>n;
+    for(int i=0 ; i<n ;i++)
+    {
+        for(int j=A ; j<=A+i ;j++)
+        {
+            cout<<char(j)<<" ";
+        }
+        for(int k=0;k<2*(n-i-1);k++)
+        {
+            cout<<"  ";
+        }
+        for(int j=A+i ; j>=A ;j--)
+        {
+            cout<<char(j)<<" ";
+        }
+        cout<<endl;
+    }
+    for(int i=n-2 ; i>=0 ;i--)
+    {
+        for(int j=A ; j<=A+i ;j++)
+        {
+            cout<<char(j)<<" ";
+        }
+        for(int k=0;k<2*(n-i-1);k++)
+        {
+            cout<<"  ";
+        }
+        for(int j=A+i ; j>=A ;j--)
+        {
+            cout<<char(j)<<" ";
+        }
+        cout<<endl;
+    }
+}
+OUTPUT:
+10
+a                                     a 
+a b                                 b a 
+a b c                             c b a 
+a b c d                         d c b a 
+a b c d e                     e d c b a 
+a b c d e f                 f e d c b a 
+a b c d e f g             g f e d c b a 
+a b c d e f g h         h g f e d c b a 
+a b c d e f g h i     i h g f e d c b a 
+a b c d e f g h i j j i h g f e d c b a 
+a b c d e f g h i     i h g f e d c b a 
+a b c d e f g h         h g f e d c b a 
+a b c d e f g             g f e d c b a 
+a b c d e f                 f e d c b a 
+a b c d e                     e d c b a 
+a b c d                         d c b a 
+a b c                             c b a 
+a b                                 b a 
+a                                     a 
